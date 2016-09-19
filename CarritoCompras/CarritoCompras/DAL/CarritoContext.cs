@@ -18,6 +18,8 @@ namespace CarritoCompras.DAL
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
+            //Aqui debemos checar lo de Pluralizacion
+
            
         }
     }
