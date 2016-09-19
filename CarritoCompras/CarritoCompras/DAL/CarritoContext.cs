@@ -13,12 +13,16 @@ namespace CarritoCompras.DAL
         public DbSet<Factura> Factura { get; set; }
         public DbSet<Producto> Producto { get; set; }
         public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<TipoProducto> TipoProducto { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
             //Aqui debemos checar lo de Pluralizacion
+
+
 
            
         }
