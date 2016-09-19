@@ -194,6 +194,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="DAL\CarritoConfiguration.cs" />
+    <Compile Include="DAL\CarritoContext.cs" />
+    <Compile Include="DAL\CarritoInitializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -202,6 +205,7 @@
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModel\Home\IndexViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -242,10 +246,16 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Catalogo\LstProductos.cshtml" />
+    <Content Include="Views\Usuario\RegistrarUsuario.cshtml" />
+    <Content Include="Views\Usuario\DetallesUsuario.cshtml" />
+    <Content Include="Views\Factura\LstFactura.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="DAL\" />
+    <Folder Include="ViewModel\Catalogo\" />
+    <Folder Include="ViewModel\Factura\" />
+    <Folder Include="ViewModel\Usuario\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
