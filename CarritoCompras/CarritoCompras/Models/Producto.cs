@@ -19,11 +19,12 @@ namespace CarritoCompras.Models
 
         public Int32 IdTipoProducto { get; set; }
 
-        public virtual TipoProducto TipoProducto { get; set; }
+        public virtual ICollection<TipoProducto> TiposProducto { get; set; }
 
         [DataType(DataType.Currency)]
         [Column(TypeName = "money")]
         public Decimal PrecioProducto { get; set; }
+
 
 
 

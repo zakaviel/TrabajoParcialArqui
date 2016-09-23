@@ -10,10 +10,10 @@ namespace CarritoCompras.DAL
 {
     public class CarritoContext : DbContext
     {
-        public DbSet<Factura> Factura { get; set; }
-        public DbSet<Producto> Producto { get; set; }
-        public DbSet<Usuario> Usuario { get; set; }
-        public DbSet<TipoProducto> TipoProducto { get; set; }
+        public DbSet<Factura> Facturas { get; set; }
+        public DbSet<Producto> Productos { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<TipoProducto> TiposProducto { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -22,9 +22,12 @@ namespace CarritoCompras.DAL
 
             //Aqui debemos checar lo de Pluralizacion
 
+            modelBuilder.Entity<TipoProducto>().MapToStoredProcedures();
+            modelBuilder.Entity<Usuario>().MapToStoredProcedures();
+            modelBuilder.Entity<Producto>().HasMany(x => x.TiposProducto);
+            modelBuilder.Entity<Factura>().HasMany(x=>x.Productos);
 
 
-           
         }
     }
 }

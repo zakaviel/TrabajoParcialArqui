@@ -18,10 +18,11 @@ namespace CarritoCompras.DAL
             {
                 new TipoProducto { IdTipoProducto=1,NombreTipo="Videos" },
                 new TipoProducto { IdTipoProducto=2,NombreTipo="Drivers" },
-                new TipoProducto { IdTipoProducto=3,NombreTipo="Juegos" }
+                new TipoProducto { IdTipoProducto=3,NombreTipo="Juegos" },
+                new TipoProducto { IdTipoProducto=3,NombreTipo="Jue" }
 
             };
-            tipoproducto.ForEach(s => context.TipoProducto.Add(s));
+            tipoproducto.ForEach(s => context.TiposProducto.Add(s));
             context.SaveChanges();
 
             var productos = new List<Producto>
@@ -29,7 +30,7 @@ namespace CarritoCompras.DAL
                 new Producto { IdProducto=1,IdTipoProducto=1,CodigoProducto="P1",DescripcionProducto="primer Producto",NombreProducto="Pornacho",PrecioProducto=(Decimal)12.5,},
             };
 
-            productos.ForEach(s => context.Producto.Add(s));
+            productos.ForEach(s => context.Productos.Add(s));
             context.SaveChanges();
 
         }
