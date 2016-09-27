@@ -3,16 +3,17 @@
 @if (Request.IsAuthenticated)
 {
 
+    <div class="top-header-left">
+        <ul>
 
-    <ul class="nav navbar-nav navbar-right">
-        
-        <li>@Html.ActionLink("0", "Home", "Index", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
-        
+            <li>@Html.ActionLink("0", "Home", "Index", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
 
-    </ul>
 
-}
-else
-{
+        </ul>
+        </div>
 
-}
+        }
+        else
+        {
+
+        }

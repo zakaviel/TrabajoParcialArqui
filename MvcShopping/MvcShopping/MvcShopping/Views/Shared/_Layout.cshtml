@@ -10,7 +10,7 @@
     <link href="~/Content/style.css" rel='stylesheet' type='text/css' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-    </script>
+    
     <!----webfonts---->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
     <!----//webfonts---->
@@ -90,7 +90,7 @@
 									    var $cart = $('#cart');
 									        $('#clickme').click(function(e) {
 									         e.stopPropagation();
-									         if ($cart.is(":hidden") 
+									         if ($cart.is(":hidden")) 
 									         {
 									           $cart.slideDown("slow");
 									       } else {
@@ -98,7 +98,7 @@
 									       }
 									    });
 									    $(document.body).click(function () {
-									       if ($cart.not(":hidden") {
+									       if ($cart.not(":hidden")) {
 									           $cart.slideUp("slow");
 									       }
 									    });
@@ -127,9 +127,9 @@
                 </div>
                 <div class="top-header-left">
                     <ul>
-                        Hola q ase
-                        @*<li><a href="/Account/Login">Login</a><span> </span></li>
-                <li><a href="/Account/Register">Join</a></li>*@
+                       
+                       @Html.Partial("_CarritoPartial")
+                
                     </ul>
                 </div>
                     <div class="top-header-right">

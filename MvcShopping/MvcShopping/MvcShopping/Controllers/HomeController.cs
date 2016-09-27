@@ -13,5 +13,9 @@ namespace MvcShopping.Controllers
         {
             return View();
         }
+        public ActionResult Temp()
+        {
+            return View();
+        }
     }
 }
