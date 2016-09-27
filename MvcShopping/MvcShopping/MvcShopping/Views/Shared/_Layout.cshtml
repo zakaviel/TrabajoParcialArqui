@@ -90,15 +90,16 @@
 									    var $cart = $('#cart');
 									        $('#clickme').click(function(e) {
 									         e.stopPropagation();
-									       if ($cart.is(":hidden") {
-									           $cart.slideDown("slow";
+									         if ($cart.is(":hidden") 
+									         {
+									           $cart.slideDown("slow");
 									       } else {
-									           $cart.slideUp("slow";
+									           $cart.slideUp("slow");
 									       }
 									    });
 									    $(document.body).click(function () {
 									       if ($cart.not(":hidden") {
-									           $cart.slideUp("slow";
+									           $cart.slideUp("slow");
 									       }
 									    });
 									    });
@@ -124,14 +125,22 @@
                     </div>
                     <div class="clear"> </div>
                 </div>
-                <div class="top-header-right">
+                <div class="top-header-left">
                     <ul>
-                        <li><a href="/Account/Login">Login</a><span> </span></li>
-                        <li><a href="/Account/Register">Join</a></li>
+                        Hola q ase
+                        @*<li><a href="/Account/Login">Login</a><span> </span></li>
+                <li><a href="/Account/Register">Join</a></li>*@
                     </ul>
                 </div>
-                <div class="clear"> </div>
-            </div>
+                    <div class="top-header-right">
+                        <ul>
+                            @Html.Partial("_LoginPartial")
+                            @*<li><a href="/Account/Login">Login</a><span> </span></li>
+                    <li><a href="/Account/Register">Join</a></li>*@
+                        </ul>
+                    </div>
+                    <div class="clear"> </div>
+                </div>
         </div>
         <!----start-mid-head---->
         <div class="mid-header">
@@ -142,7 +151,7 @@
                     </form>
                 </div>
                 <div class="mid-grid-right">
-                    <a class="logo" href="index.html"><img src="~/Content/Images/logo3.png" title="" /></a>
+                    <a class="logo" href="/Home/index.html"><img src="~/Content/Images/logo3.png" title="" /></a>
                 </div>
                 <div class="clear"> </div>
             </div>
@@ -154,7 +163,7 @@
                 <!-- start header menu -->
                 <ul class="megamenu skyblue">
                     <li class="grid">
-                        <a class="color2" href="#">MEN</a>
+                        <a class="color2" href="/StoreManager/Index">Store</a>
                         <div class="megapanel">
                             <div class="row">
                                 <div class="col1">
@@ -214,7 +223,7 @@
                         </div>
                     </li>
                     <li class="active grid">
-                        <a class="color4" href="#">women</a>
+                        <a class="color4" href="/Home/Index">News</a>
                         <div class="megapanel">
                             <div class="row">
                                 <div class="col1">

@@ -115,6 +115,9 @@ body{
 .top-header-right ul li{
 	display:inline-block;
 }
+.top-header-left ul li{
+	display:inline-block;
+}
 .top-header-right ul li:first-child{
 	
 }
@@ -127,6 +130,22 @@ body{
 	vertical-align: middle;
 }
 .top-header-right ul li a{
+	color: #FFF;
+	font-size: 0.7em;
+	text-transform: uppercase;
+}
+.top-header-left ul li:first-child{
+	
+}
+.top-header-left ul li:first-child span{
+	height: 13px;
+	width: 1px;
+	background: #FFF;
+	display: inline-block;
+	margin: 0 0.5em 0 0.6em;
+	vertical-align: middle;
+}
+.top-header-left ul li a{
 	color: #FFF;
 	font-size: 0.7em;
 	text-transform: uppercase;
