@@ -55,8 +55,8 @@ namespace MvcShopping
             //   consumerSecret: "");
 
             app.UseFacebookAuthentication(
-       appId: "1748147132120522",
-       appSecret: "0a711afe850b0d8a505d1abcb6ee5565");
+       appId: "1758706401044287",
+       appSecret: "329f48f1d18ea93d97292f4ff7555813");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
@@ -67,11 +67,11 @@ namespace MvcShopping
 
 
 
-            app.UseGoogleAuthentication(
-     clientId: "112450747953-jlnttqgv9ph7qqiaosu6lei6fq7kkjqa.apps.googleusercontent.com",  
+     //       app.UseGoogleAuthentication(
+     //clientId: "112450747953-jlnttqgv9ph7qqiaosu6lei6fq7kkjqa.apps.googleusercontent.com",  
      
-     clientSecret: "iYCi0Xsw0iWLnJdnsETlqd_-");
-        }
+     //clientSecret: "iYCi0Xsw0iWLnJdnsETlqd_-");
+     }
 
         
     }

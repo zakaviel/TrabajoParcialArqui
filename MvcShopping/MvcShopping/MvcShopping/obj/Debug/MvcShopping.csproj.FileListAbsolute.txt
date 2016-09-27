@@ -173,3 +173,4 @@ F:\ArquiTemp\TrabajoParcialArqui\MvcShopping\MvcShopping\MvcShopping\bin\System.
 F:\ArquiTemp\TrabajoParcialArqui\MvcShopping\MvcShopping\MvcShopping\bin\System.Web.Optimization.xml
 F:\ArquiTemp\TrabajoParcialArqui\MvcShopping\MvcShopping\MvcShopping\bin\System.Web.Optimization.Less.pdb
 F:\ArquiTemp\TrabajoParcialArqui\MvcShopping\MvcShopping\MvcShopping\bin\System.Web.Optimization.Less.xml
+F:\ArquiTemp\TrabajoParcialArqui\MvcShopping\MvcShopping\MvcShopping\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
