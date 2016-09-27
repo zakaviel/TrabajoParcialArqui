@@ -326,6 +326,7 @@
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\CartTonge.js" />
     <Content Include="scripts\easing.js" />
     <Content Include="scripts\easyResponsiveTabs.js" />
     <Content Include="scripts\jquery-1.10.2.min.map" />
@@ -427,6 +428,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_CarritoPartial.cshtml" />
     <Content Include="Views\Home\Temp.cshtml" />
+    <Content Include="Views\Shared\_CarritoBillPartial.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

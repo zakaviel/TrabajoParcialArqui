@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <script src="~/scripts/jquery.min.js"></script>
+    <script src="~/scripts/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        
+        <a href="#" data-toggle="popover" placement="bottom" title="Productos (-GetProductos-)" data-content="-Link a Detalle de Carrito-"><img src="~/Content/Images/fax.png" /> </a>
+    
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            var options = {
+                placement: "bottom", trigger: "click"
+            };
+
+    $('[data-toggle="popover"]').popover(options);
+});
+    </script>
+
+</body>
+
+</html>
+

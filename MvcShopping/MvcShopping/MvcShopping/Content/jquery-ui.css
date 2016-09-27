@@ -242,7 +242,7 @@ body .ui-tooltip { border-width: 2px; }
 .ui-widget { font-family: Verdana,Arial,sans-serif/*{ffDefault}*/; font-size: 1.1em/*{fsDefault}*/; }
 .ui-widget .ui-widget { font-size: 1em; }
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Verdana,Arial,sans-serif/*{ffDefault}*/; font-size: 1em; }
-.ui-widget-content {background: url(../images/selection.png) no-repeat 0px 0px;
+.ui-widget-content {background: url(/Content/Images/selection.png) no-repeat 0px 0px;
 background-size: 100% 100%; }
 .ui-widget-content a { color: #222222/*{fcContent}*/; }
 .ui-widget-header { border: 1px solid #aaaaaa/*{borderColorHeader}*/; color: #222222/*{fcHeader}*/; font-weight: bold; }
