@@ -1,30 +1,18 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
-    <script src="~/scripts/jquery.min.js"></script>
-    <script src="~/scripts/bootstrap.min.js"></script>
-</head>
-<body>
+﻿
 
-    <div class="container">
-        
-        <a href="#" data-toggle="popover" placement="bottom" title="Productos (-GetProductos-)" data-content="-Link a Detalle de Carrito-"><img src="~/Content/Images/fax.png" /> </a>
-    
-    </div>
+    @{
+        int NumeroItems = 0;
+        if (Session["NumeroItems"] != null)
+        {
+            NumeroItems = (int)(Session["NumeroItems"]);
+        }
+        <ul class="nav navbar-nav navbar-right">
+            <li>@Html.ActionLink("Numero de Items" + "(" + NumeroItems.ToString() + ")", "Index", "ShoppingCart", routeValues: null, htmlAttributes: new { id = "Carrito" })</li>
+        </ul>
+  }
 
-    <script>
-        $(document).ready(function () {
-            var options = {
-                placement: "bottom", trigger: "click"
-            };
 
-    $('[data-toggle="popover"]').popover(options);
-});
-    </script>
 
-</body>
 
-</html>
+
 

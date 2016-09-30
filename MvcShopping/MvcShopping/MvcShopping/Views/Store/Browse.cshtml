@@ -1,17 +1,46 @@
 ﻿@model MvcShopping.Models.Genre
 
-@{
-    ViewBag.Title = "Browse";
+
+
+
+
+
+
+
+@if (Model != null)
+{
+
+    Html.RenderAction("_GenresList");
+
+    <h2>Genre: @Model.Name</h2>
+    <div class="header-bottom">
+        <div class="wrap">
+            <!-- start header menu -->
+            <ul class="megamenu skyblue">
+
+                @foreach (var album in Model.Albums)
+                {
+                    <li class="grid">
+                        @*@Html.ActionLink(genre.Name, "Browse", new { genre = genre.Name },new { @class="Color2"} )
+                            @Url.Action(genre.Name, "Browse", new { genre = genre.Name })*@
+
+                        <a class="color2" href="@Url.Action("Details", new { id = album.AlbumId})">
+                            <div class="form-group ">
+                                <h4>@album.Title</h4>
+                                
+                                <img src="@album.AlbumArtUrl">
+                            </div>
+                            
+                        
+                        </a>
+
+
+                    </li>
+                }
+            </ul>
+
+        </div>
+    </div>
+
+
 }
-
-<h2>Browsing Genre: @Model.Name</h2>
-
-<ul>
-    @foreach (var album in Model.Albums)
-    {
-        <li>
-            @Html.ActionLink(album.Title, "Details", new { id = album.AlbumId})
-        </li>
-
-    }
-</ul>

@@ -152,6 +152,6 @@ F:\ArquiTemp\TrabajoParcialArqui\MvcShopping\MvcShopping\MvcShopping\bin\System.
 F:\ArquiTemp\TrabajoParcialArqui\MvcShopping\MvcShopping\MvcShopping\bin\System.Web.WebPages.xml
 F:\ArquiTemp\TrabajoParcialArqui\MvcShopping\MvcShopping\MvcShopping\bin\System.Web.WebPages.Deployment.xml
 F:\ArquiTemp\TrabajoParcialArqui\MvcShopping\MvcShopping\MvcShopping\bin\System.Web.WebPages.Razor.xml
-F:\ArquiTemp\TrabajoParcialArqui\MvcShopping\MvcShopping\MvcShopping\obj\Debug\MvcShopping.csprojResolveAssemblyReference.cache
 F:\ArquiTemp\TrabajoParcialArqui\MvcShopping\MvcShopping\MvcShopping\obj\Debug\MvcShopping.dll
 F:\ArquiTemp\TrabajoParcialArqui\MvcShopping\MvcShopping\MvcShopping\obj\Debug\MvcShopping.pdb
+F:\ArquiTemp\TrabajoParcialArqui\MvcShopping\MvcShopping\MvcShopping\obj\Debug\MvcShopping.csprojResolveAssemblyReference.cache

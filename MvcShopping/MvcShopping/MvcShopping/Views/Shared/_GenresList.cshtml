@@ -1,0 +1,33 @@
+﻿@model List<MvcShopping.Models.Genre>
+
+@{
+    ViewBag.Title = "Store";
+}
+
+@if (Model != null)
+    {
+
+
+    <div class="header-bottom">
+        <div class="extra-wrap">
+            <!-- start header menu -->
+            <ul class="megamenu skyblue">
+
+@foreach (var genre in Model)
+{
+                <li class="grid">
+                    @*@Html.ActionLink(genre.Name, "Browse", new { genre = genre.Name },new { @class="Color2"} )
+                    @Url.Action(genre.Name, "Browse", new { genre = genre.Name })*@
+                    
+                    <a class="color2" href="@Url.Action("Browse", "Store", new { genre = genre.Name })">@genre.Name</a>
+
+             
+                   </li>
+}
+ </ul>
+
+        </div>
+    </div>
+   
+
+}
