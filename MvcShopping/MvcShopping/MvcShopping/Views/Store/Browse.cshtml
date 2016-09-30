@@ -12,35 +12,90 @@
 
     Html.RenderAction("_GenresList");
 
-    <h2>Genre: @Model.Name</h2>
-    <div class="header-bottom">
-        <div class="wrap">
-            <!-- start header menu -->
-            <ul class="megamenu skyblue">
+    
 
-                @foreach (var album in Model.Albums)
-                {
-                    <li class="grid">
-                        @*@Html.ActionLink(genre.Name, "Browse", new { genre = genre.Name },new { @class="Color2"} )
-                            @Url.Action(genre.Name, "Browse", new { genre = genre.Name })*@
+    //d
+    <div class="header_bottom_right">
+        <div class="slider">
+            <div class="main">
+                <div class="content">
 
-                        <a class="color2" href="@Url.Action("Details", new { id = album.AlbumId})">
-                            <div class="form-group ">
-                                <h4>@album.Title</h4>
-                                
-                                <img src="@album.AlbumArtUrl">
+                    <div class="content_top">
+                        <div class="heading">
+                            <h3>Genre: @Model.Name</h3>
+                        </div>
+                      
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="section group">
+                        @*Inicio*@
+                        @foreach (var album in Model.Albums)
+                        {
+
+
+
+
+
+
+
+                            @* Inicio *@
+
+
+
+                            <div class="grid_1_of_4 images_1_of_4">
+                                <a href="@Url.Action("Details", "Store", new { id = album.AlbumId })"><img src="@album.AlbumArtUrl" alt="" /></a>
+                                <h2>@album.Title.Substring(0, album.Title.Length<10? album.Title.Length :10).ToString() .</h2>
+                                <div class="price-details">
+                                    <div class="price-number">
+                                        
+                                        <p><span class="rupees">$@album.Price</span></p>
+                                        
+                                    </div>
+                                    <div class="add-cart">
+                                        <h4><a href="@Url.Action("AddToCart", "ShoppingCart", new { id = album.AlbumId })">Add to Cart</a></h4>
+                                    </div>
+
+                                    <div class="clear"></div>
+
+                                </div>
+
+
                             </div>
-                            
-                        
-                        </a>
 
 
-                    </li>
-                }
-            </ul>
 
+
+                            @* Fin *@
+
+
+
+
+
+
+                        }
+
+                    </div>
+
+
+
+
+
+                    
+
+
+                    @* Fin *@
+
+
+                </div>
+            </div>
         </div>
     </div>
 
 
+
+    ///
+
+
 }
+

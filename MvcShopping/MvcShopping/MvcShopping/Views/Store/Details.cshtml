@@ -6,39 +6,49 @@
 
 <link href="@Url.Content("~/Content/bootstrap-theme.min.css")" rel="stylesheet" type="text/css" media="all" />
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Portada de @Model.Title</th>
-            <th>Genre</th>
-            <th>Artist</th>
-            <th>Price</th>
-            <th>Options</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="info">
-            <th >
-                
-                    <img alt="@Model.Title"
-                         src="@Model.AlbumArtUrl" />
-                
-            </th>
-            <td>
-                @Model.Genre.Name
-            </td>
-            <td>
-                @Model.Artist.Name
-            </td>
-            <td>
-                @String.Format("{0:F}", Model.Price)
-            </td>
-            <td>
-                <p class="button">
-                    @Html.ActionLink("Add tocart", "AddToCart", "ShoppingCart", new { id = Model.AlbumId }, "")
-                </p>
-            </td>
-        </tr>
+<div class="header_bottom_right">
+    <div class="slider">
+        <div class="main">
+            <div class="content">
 
-    </tbody>
-</table>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Portada de @Model.Title</th>
+                            <th>Genre</th>
+                            <th>Artist</th>
+                            <th>Price</th>
+                            <th>Options</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="info">
+                            <th>
+
+                                <img alt="@Model.Title"
+                                     src="@Model.AlbumArtUrl" />
+
+                            </th>
+                            <td>
+                                @Model.Genre.Name
+                            </td>
+                            <td>
+                                @Model.Artist.Name
+                            </td>
+                            <td>
+                                @String.Format("{0:F}", Model.Price)
+                            </td>
+                            <td>
+                                <p class="button">
+                                    @Html.ActionLink("Add tocart", "AddToCart", "ShoppingCart", new { id = Model.AlbumId }, "")
+                                </p>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>            
+            
+            </div>
+        </div>
+    </div>
+</div>

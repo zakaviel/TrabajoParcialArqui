@@ -12,6 +12,12 @@ namespace MvcShopping.Controllers
     public class ShoppingCartController : Controller
     {
         MusicStoreEntities storeDB = new MusicStoreEntities();
+        public PartialViewResult _GenresList()
+        {
+            var genres = storeDB.Genres.ToList();
+            return PartialView("~/Views/Shared/_GenresList.cshtml", genres);
+        }
+
         //
         // GET: /ShoppingCart/
         public ActionResult Index()
